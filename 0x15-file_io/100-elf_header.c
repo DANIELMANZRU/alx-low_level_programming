@@ -187,8 +187,8 @@ void print_abi(unsigned char *e_ident)
 }
 
 /**
- * print_type - Prints the typse of an ELF header.
- * @e_type: The ELF types.
+ * print_type - Prints the type of an ELF header.
+ * @e_type: The ELF type.
  * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_type(unsigned int e_type, unsigned char *e_ident)
@@ -223,7 +223,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 /**
  * print_entry - Prints the entry point of an ELF header.
  * @e_entry: The address of the ELF entry point.
- * @e_ident: A pointer to an arrays containing the ELF class.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
@@ -244,10 +244,10 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 }
 
 /**
- * close_elf - Close  an ELF file.
- * @elf: The file descriptors  of the ELF file.
+ * close_elf - Closes an ELF file.
+ * @elf: The file descriptor of the ELF file.
  *
- * Description: If the file cant be closed - exit code 98.
+ * Description: If the file cannot be closed - exit code 98.
  */
 void close_elf(int elf)
 {
@@ -263,7 +263,7 @@ void close_elf(int elf)
  * main - Displays the information contained in the
  * ELF header at the start of an ELF file.
  * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments availed .
+ * @argv: An array of pointers to the arguments.
  *
  * Return: 0 on success.
  *
